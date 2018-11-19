@@ -1,0 +1,173 @@
+// VARIABLES
+$bg-color: #13161f;
+$pink-color: #eb305d;
+$shadowy: #737478;
+$blueish: #848192;
+$darky: #23262d;
+
+
+a.navbar-brand {
+  padding-bottom: 20px;
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: $pink-color;
+
+  span {
+    color: #fff;
+
+    position: relative;
+    padding-left: 32px;
+
+    &::before {
+      content: '';
+      width: 2px;
+      height: 46px;
+      display: inline-block;
+      background: $pink-color;
+      position: absolute;
+      top: 1px;
+      left: 10px;
+    }
+  }
+
+
+}
+
+.movie-cast-info {
+
+
+
+  p {
+    color: $shadowy;
+  }
+
+}
+
+
+.footer {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 80px;
+  font-size: .9em;
+  color: #fff;
+
+  a {
+    color: $pink-color;
+  }
+}
+
+
+.footer-info-row {
+  padding-bottom: 30px;
+}
+
+// account info footer
+
+.footer-info {
+
+  button {
+    transition: .3s;
+
+    &:hover {
+      -webkit-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+      -moz-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+      box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+      transition: .3s;
+    }
+
+    background: $pink-color;
+    border-color: $pink-color;
+    border-radius: 0px;
+
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+  }
+
+
+  p {
+    color: $shadowy;
+  }
+
+
+  .footer-head-text {
+    padding-top: 0.3125rem;
+    padding-bottom: 20px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+
+    list-style-type: none;
+    color: $shadowy;
+
+    a {
+      transition: .3s;
+      color: $shadowy;
+
+      &:hover {
+        text-decoration: none;
+        color: $pink-color;
+        transition: .3s;
+
+      }
+    }
+  }
+
+
+}
+
+
+// icons on form inputs
+
+
+.article-input {
+  padding-bottom: 20px;
+
+  i {
+    position: absolute;
+    color: #fff;
+    right: 20px;
+    bottom: 37px;
+  }
+
+  &:hover {
+
+    i {
+      position: absolute;
+      color: $pink-color;
+      right: 20px;
+      bottom: 37px;
+    }
+  }
+
+  input,
+  textarea.form-control {
+    background-color: $darky !important;
+    border: none;
+    padding: 25px;
+    border-radius: 0;
+
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 0, 140, 0.404);
+
+    }
+
+
+  }
+
+}

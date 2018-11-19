@@ -1,23 +1,45 @@
-<nav class="navbar navbar-dark bg-dark mb-5">
-  <a class="navbar-brand" href="/">Angular & Bootstrap</a>
+
+<div class="container header-nav">
+  
+
+<!-- top nav -->
+<nav class="navbar navbar-dark bg-dark ">
+  <a class="navbar-brand" href="/">Movie <span>Cast</span></a>
   <div class="navbar-expand mr-auto">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" routerLink="">Home</a>
-      <a class="nav-item nav-link" href="#">About</a>
-      <a class="nav-item nav-link" routerLink="contact">Contact</a>
+    
     </div>
   </div>
   <div class="navbar-expand ml-auto navbar-nav">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="https://github.com/beeman" target="_blank">
-        <i class="fa fa-github"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://twitter.com/beeman_nl" target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://medium.com/@beeman" target="_blank">
-        <i class="fa fa-medium"></i>
-      </a>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Search">
+        
+        <h2> Witaj Gość! <a href="#"> Zaloguj się</a></h2>
+        
+      </form>
     </div>
   </div>
 </nav>
+
+
+<!-- navbar -->
+<nav class="navbar navbar-dark bg-dark mb-5">
+
+  <div class="navbar-expand mr-auto">
+    <div class="navbar-nav">
+    
+    </div>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="">Strona Główna</a>
+      <a class="nav-item nav-link" href="#">Baza Filmów</a>
+      <a class="nav-item nav-link" routerLink="contact">Aktualności</a>
+      <a class="nav-item nav-link" href="#">Celebryci</a>
+     <button class="btn btn-secondary" href="#">Twoje Filmy</button>
+    </div>
+  </div>
+</nav>
+
+</div>

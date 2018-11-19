@@ -1,0 +1,253 @@
+// VARIABLES
+$bg-color: #13161f;
+$pink-color: #eb305d;
+$shadowy: #737478;
+$blueish: #848192;
+$darky: #23262d;
+// table 
+
+.table-dark {
+  background-color: transparent;
+}
+
+table {
+
+  margin-top: 50px;
+
+  td {
+    color: $shadowy;
+    font-weight: 400;
+    font-size: 1em;
+    padding: .50em;
+    padding-left: 35px;
+  }
+
+  th {
+    padding: .50em;
+
+    color: $pink-color;
+    font-weight: 400;
+    font-size: 1em;
+  }
+
+}
+
+// movie card
+
+.movie-card_block {
+
+
+  background-color: $bg-color;
+  -webkit-box-shadow: 0px 13px 43px 5px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 13px 43px 5px rgba(0, 0, 0, 0.53);
+  box-shadow: 0px 13px 43px 5px rgba(0, 0, 0, 0.53);
+  padding: 50px;
+  color: rgb(133, 133, 133);
+  margin-bottom: 100px;
+  margin-top: 50px;
+
+
+  .movie-card_header {
+
+
+    display: flex;
+
+    img {
+      height: 500px;
+      box-shadow: 1px 0px 29px 0px rgba(0, 0, 0, 0.75);
+    }
+
+
+    button {
+      position: absolute;
+      border-radius: 20px;
+      background: $pink-color;
+      border-color: $pink-color;
+      bottom: -15px;
+      left: 135px;
+
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 0.8em;
+    }
+  }
+
+  .movie-card_info {
+    h2 {
+      color: #fff;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: 1px;
+      padding-bottom: 10px;
+    }
+
+
+    h3 {
+      font-size: 1em;
+      color: $blueish;
+      padding-left: 55px;
+
+      &::before {
+
+        content: '';
+        position: absolute;
+        top: 72px;
+        left: 25px;
+        width: 30px;
+        height: 2px;
+        background-color: $pink-color;
+
+      }
+    }
+
+    .badge-secondary {
+      padding: 5px 10px;
+      background: #2b2e37;
+      color: $shadowy;
+    }
+
+  }
+
+  button {
+    position: absolute;
+    border-top-left-radius: 20px;
+    background: $pink-color;
+    border-color: $pink-color;
+    bottom: 0px;
+    right: 0px;
+    -webkit-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+    -moz-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+    box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+  }
+
+}
+
+
+
+
+// movie description
+
+.movie_description_block {
+
+  hr {
+    color: $shadowy;
+    background-color: $shadowy;
+    opacity: 0.3;
+  }
+
+  h2 {
+    color: rgb(211, 210, 210);
+    padding-bottom: 50px;
+
+    &::before {
+
+      content: '';
+      position: absolute;
+      top: 65px;
+      left: 25px;
+      width: 30px;
+      height: 2px;
+      background-color: $pink-color;
+
+    }
+  }
+
+  p {
+    color: rgb(143, 143, 143);
+  }
+
+
+  .movie_description_info {
+    padding-bottom: 50px;
+  }
+
+  .movie_description_article {
+    padding-bottom: 200px;
+    padding-top: 50px;
+
+
+
+    input,
+    textarea.form-control {
+      background-color: $darky !important;
+      border: none;
+      padding: 25px;
+      border-radius: 0;
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 140, 0.404);
+      }
+
+    }
+
+    button {
+      &:hover {
+        -webkit-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+        -moz-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+        box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+        transition: .3s;
+      }
+
+      transition: .3s;
+      background: $pink-color;
+      border-color: $pink-color;
+      border-radius: 0px;
+
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 0.8em;
+    }
+
+
+    .text-field {
+      height: 100px;
+    }
+
+    .form-row {
+      padding-bottom: 25px;
+    }
+
+  }
+
+
+}
+
+// icons on form inputs
+.movie-input {
+  i {
+    position: absolute;
+    color: #fff;
+    right: 20px;
+    top: 17px;
+  }
+
+  &:hover {
+
+    i {
+
+      color: $pink-color;
+
+    }
+  }
+}
+
+.article-input {
+  i {
+    position: absolute;
+    color: #fff;
+    right: 20px;
+    bottom: 17px;
+  }
+
+  &:hover {
+
+    i {
+
+      color: $pink-color;
+
+    }
+  }
+}
