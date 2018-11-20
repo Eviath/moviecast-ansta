@@ -5,7 +5,7 @@ $shadowy: #737478;
 $blueish: #848192;
 $darky: #23262d;
 
-
+// logo navbar footer
 a.navbar-brand {
   padding-bottom: 20px;
   font-size: 36px;
@@ -35,9 +35,9 @@ a.navbar-brand {
 
 }
 
+
+
 .movie-cast-info {
-
-
 
   p {
     color: $shadowy;
@@ -45,7 +45,7 @@ a.navbar-brand {
 
 }
 
-
+// footer styles
 .footer {
 
   display: flex;
@@ -95,6 +95,7 @@ a.navbar-brand {
   }
 
 
+  // footer head text
   .footer-head-text {
     padding-top: 0.3125rem;
     padding-bottom: 20px;
@@ -134,7 +135,6 @@ a.navbar-brand {
 
 // icons on form inputs
 
-
 .article-input {
   padding-bottom: 20px;
 
@@ -173,6 +173,7 @@ a.navbar-brand {
 }
 
 
+// media for mobile phones
 @media (max-width: 575.98px) {
 
   .footer-info-row {

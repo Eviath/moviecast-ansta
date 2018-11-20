@@ -4,8 +4,9 @@ $pink-color: #eb305d;
 $shadowy: #737478;
 $blueish: #848192;
 $darky: #23262d;
-// table 
 
+
+//  movie table info
 .table-dark {
   background-color: transparent;
 }
@@ -32,6 +33,7 @@ table {
 
 }
 
+// full height background
 .container.mov-bg {
   height: 100vh;
 }
@@ -50,6 +52,7 @@ table {
   color: rgb(133, 133, 133);
   margin-bottom: 100px;
   margin-top: 50px;
+
 
 
   .movie-card_header {
@@ -77,6 +80,8 @@ table {
     }
   }
 
+
+//  movie info 
   .movie-card_info {
     h2 {
       color: #fff;
@@ -113,6 +118,7 @@ table {
 
   }
 
+  // zwiastun buy button
   button {
     position: absolute;
     border-top-left-radius: 20px;
@@ -169,12 +175,14 @@ table {
     padding-bottom: 50px;
   }
 
+
+  // recenzja
   .movie_description_article {
     padding-bottom: 200px;
     padding-top: 50px;
 
 
-
+// inputs recenzja
     input,
     textarea.form-control {
       background-color: $darky !important;
@@ -239,6 +247,8 @@ table {
   }
 }
 
+
+// recenzja input icons
 .article-input {
   i {
     position: absolute;
@@ -257,6 +267,8 @@ table {
   }
 }
 
+
+// row with videos "zwiastuny"
 .videos-row {
   padding: 50px;
   width: 100%;
@@ -298,7 +310,7 @@ table {
   }
 }
 
-
+// paying form
 .pay-card {
 
   a {
@@ -348,6 +360,8 @@ table {
   }
 
 }
+
+// media for mobile phones responsive design
 
 @media (max-width: 575.98px) {
 
