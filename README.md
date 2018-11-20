@@ -1,3 +1,18 @@
+# Movie | Cast  - ANSTA - Praca rekrutacyjna.
+
+
+
+![IndexPage](https://i.imgur.com/DKGKCVa.jpg)
+
+![IndexPage](https://i.imgur.com/yj1vPy8.png)
+
+
+
+RWD ( Responsive Web Design )
+![IndexPage](https://i.imgur.com/w9cagC7.png)
+![IndexPage](https://i.imgur.com/X8t1Vd4.png)
+
+
 # AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
