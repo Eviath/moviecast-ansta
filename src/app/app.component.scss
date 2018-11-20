@@ -3,7 +3,7 @@
 .header {
   &::after {
     content: "";
-    background: url('/../assets/bg.jpg');
+    background: url('./assets/bg.jpg');
     background-position: bottom;
     opacity: 0.5;
     background-size: cover;
