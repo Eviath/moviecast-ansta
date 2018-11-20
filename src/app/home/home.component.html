@@ -1,17 +1,186 @@
-<div class="container">
+<div class="container mov-bg">
 
   <div class="row">
 
-    <div class="col-md-11 mx-auto movie-card_block">
+    <div class="col-md-11 mx-auto movie-card_block ">
+
+      <!-- videos -->
+      <div class="row videos-row mx-auto" *ngIf="isShow">
+
+        <div class="col-md-12 video-head text-center">
+          <h2>Zwiastuny</h2>
+        </div>
 
 
 
+
+        <div class="col-md-6">
+
+          <iframe class="resp-iframe" src="https://www.youtube.com/embed/GiKfJnG-qp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+        </div>
+
+        <div class="col-md-6">
+
+          <iframe class="resp-iframe" src="https://www.youtube.com/embed/I_3HuvJ6g04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+        </div>
+
+
+        <button href (click)="isShow = !isShow" type="button" class="btn btn-secondary"> <i class="fas fa-times-circle"></i>
+          WRÓĆ DO INFORMACJI</button>
+
+      </div>
+
+
+      <!--  BUY PAGE -->
+      <div class="row videos-row mx-auto " *ngIf="isBuy">
+
+
+
+
+        <div class="col-md-4 log-in_col ">
+          <div class="log-in_text ">
+
+
+            <a href="#">
+              <h2 class="text-center">Zaloguj się</h2>
+            </a>
+
+            <p>Zaloguj się aby wykupić dostęp lub skorzystaj z form płatności.</p>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-2 log-in_col">
+          <div class="log-in_text ">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="col-md-6 pay-card">
+
+
+          <article class="card">
+            <div class="card-body p-5">
+
+              <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+                    <i class="fa fa-credit-card"></i> Karta kredytowa</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+                    <i class="fab fa-paypal"></i> PayPal</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+                    <i class="fa fa-university"></i> Przelew bankowy</a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="nav-tab-card">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="username">Imię i nazwisko</label>
+                      <input type="text" class="form-control" name="username" placeholder="" required="">
+                    </div> <!-- form-group.// -->
+
+                    <div class="form-group">
+                      <label for="cardNumber">Numer karty</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" name="cardNumber" placeholder="">
+                        <div class="input-group-append">
+                          <span class="input-group-text text-muted">
+                            <i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>  
+                            <i class="fab fa-cc-mastercard"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div> <!-- form-group.// -->
+
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <div class="form-group">
+                          <label><span class="hidden-xs">Data wygaśnięcia karty</span> </label>
+                          <div class="input-group">
+                            <input type="number" class="form-control" placeholder="Miesiąc" name="">
+                            <input type="number" class="form-control" placeholder="Rok" name="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="form-group">
+                          <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV
+                            <i class="fa fa-question-circle"></i></label>
+                          <input type="number" class="form-control" required="">
+                        </div> <!-- form-group.// -->
+                      </div>
+                    </div> <!-- row.// -->
+                    <button class="subscribe btn btn-primary btn-block" type="button"> Potwierdź </button>
+                  </form>
+                </div> <!-- tab-pane.// -->
+                <div class="tab-pane fade" id="nav-tab-paypal">
+                  <p>PayPal jest najłatwiejszym sposobem płatności w internecie.</p>
+                  <p>
+                    <button type="button" class="btn btn-primary"> <i class="fab fa-paypal"></i> Moje konto PayPal
+                    </button>
+                  </p>
+                  <p><strong>Uwaga:</strong> Zaloguj się za pomocą konta PayPal by wykupić dostęp. </p>
+                </div>
+                <div class="tab-pane fade" id="nav-tab-bank">
+                  <p>Dane do przelewu</p>
+                  <dl class="param">
+                    <dt>Nazwa banku: </dt>
+                    <dd>Millenium Bank</dd>
+                  </dl>
+                  <dl class="param">
+                    <dt>Numer konta: </dt>
+                    <dd> 1232424245678912345</dd>
+                  </dl>
+                  <dl class="param">
+                    <dt>IBAN: </dt>
+                    <dd> 12344341156789</dd>
+                  </dl>
+                  <p><strong>Uwaga:</strong> W tytule przelewu proszę podać nazwę oraz e-mail konta, na które ma zostać
+                    przypisany dostęp do filmu. </p>
+                </div> <!-- tab-pane.// -->
+              </div> <!-- tab-content .// -->
+
+            </div> <!-- card-body.// -->
+          </article> <!-- card.// -->
+
+
+
+
+        </div>
+
+
+        <button href (click)="isBuy = !isBuy" type="button" class="btn btn-secondary"> <i class="fas fa-times-circle"></i>
+          WRÓĆ DO INFORMACJI</button>
+
+      </div>
+
+
+      <!-- movie info -->
       <div class="row">
 
         <div class="movie-card_header col-md-6 justify-content-center">
 
-          <img src="../assets/playerone.jpg" alt="">
-          <button type="button" class="btn btn-secondary"> <i class="fas fa-play-circle"></i> OBEJRZYJ ZWIASTUN</button>
+
+          <div class="resp-container movie-photo">
+
+            <!-- <iframe  class="resp-iframe"  src="https://www.youtube.com/embed/GiKfJnG-qp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <img src="../assets/playerone.jpg" alt="">
+
+
+          </div>
+
+          <button (click)="isShow = !isShow" type="button" class="btn btn-secondary"> <i class="fas fa-play-circle"></i>
+            OBEJRZYJ ZWIASTUN</button>
         </div>
 
         <div class="movie-card_info col-md-6">
@@ -65,12 +234,33 @@
           </table>
 
         </div>
-        <button type="button" class="btn btn-secondary"> <i class="fas fa-tags"></i> KUP DOSTĘP</button>
+        <button (click)="isBuy = !isBuy" type="button" class="btn btn-secondary"> <i class="fas fa-tags"></i> KUP
+          DOSTĘP</button>
 
       </div>
 
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+
 
 
     <div class="col-md-10 mx-auto movie_description_block">

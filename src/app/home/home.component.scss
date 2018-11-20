@@ -32,6 +32,11 @@ table {
 
 }
 
+.container.mov-bg {
+  height: 100vh;
+}
+
+
 // movie card
 
 .movie-card_block {
@@ -250,4 +255,143 @@ table {
 
     }
   }
+}
+
+.videos-row {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 99;
+  background: $bg-color;
+
+  .resp-iframe {
+    margin-top: -50px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .video-head {
+    max-height: 50px;
+
+    h2 {
+      color: #fff;
+
+      &::before {
+
+        content: '';
+        position: absolute;
+        top: 62px;
+        transform: translateX(23px);
+        width: 100px;
+        height: 2px;
+        background-color: $pink-color;
+
+      }
+
+    }
+  }
+}
+
+
+.pay-card {
+
+  a {
+    color: $pink-color;
+  }
+
+  a.nav-link.active {
+    background-color: rgb(199, 199, 199);
+  }
+
+
+  button {
+    &:hover {
+      -webkit-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+      -moz-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+      box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
+      transition: .3s;
+    }
+
+    transition: .3s;
+    background: $pink-color;
+
+    border-radius: 0px;
+
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+  }
+
+}
+
+.log-in_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+
+  a {
+    color: $pink-color;
+
+  }
+
+  p {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+
+
+  .movie-card_info {
+    margin-top: 50px;
+
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    h3 {
+      padding-left: 0 !important;
+      text-align: center;
+
+      &::before {
+        display: none;
+
+      }
+    }
+  }
+
+
+  .container.mov-bg {
+    height: auto;
+  }
+
+
+  .movie-card_block {
+
+    button {
+      left: 110px;
+      border-top-right-radius: 20px;
+    }
+
+    .movie-card_header {
+      button {
+        left: 35px;
+      }
+    }
+  }
+
+
+
+
 }
