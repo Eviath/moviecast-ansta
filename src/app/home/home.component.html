@@ -21,7 +21,8 @@
         <div class="col-md-6">
 
           <iframe class="resp-iframe" src="https://www.youtube.com/embed/GiKfJnG-qp4" frameborder="0" allow="accelerometer;
-            autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
+            autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
           </iframe>
 
         </div>
@@ -36,14 +37,14 @@
 
         </div>
 
-        
+
         <!-- back to info about movie button -->
-        <button href (click)="isShow = !isShow" type="button" class="btn btn-secondary"> 
+        <button href (click)="isShow = !isShow" type="button" class="btn btn-secondary">
           <i class="fas fa-times-circle"></i>
           WRÓĆ DO INFORMACJI
         </button>
 
-      
+
       </div> <!-- videos-row end -->
 
 
@@ -65,8 +66,8 @@
             <p>Zaloguj się aby wykupić dostęp lub skorzystaj z form płatności.</p>
 
 
-          </div>  <!-- log-in text end -->
-        </div>  <!-- log-in columnd end -->
+          </div> <!-- log-in text end -->
+        </div> <!-- log-in columnd end -->
 
 
         <div class="col-md-2 log-in_col">
@@ -192,8 +193,8 @@
 
             <img src="./assets/playerone.jpg" alt="">
 
-<button (click)="isShow = !isShow" type="button" class="btn btn-secondary"> <i class="fas fa-play-circle"></i>
-  OBEJRZYJ ZWIASTUN</button>
+            <button (click)="isShow = !isShow" type="button" class="btn btn-secondary"> <i class="fas fa-play-circle"></i>
+              OBEJRZYJ ZWIASTUN</button>
 
           </div>
 
@@ -261,13 +262,24 @@
 
 
       </div> <!-- end of row -->
-    <button (click)="isBuy = !isBuy" type="button" class="btn btn-secondary">
-      <i class="fas fa-tags"></i>
-      KUP DOSTĘP
-    </button>
-    </div>  <!-- movie card block end -->
+      <button (click)="isBuy = !isBuy" type="button" class="btn btn-secondary">
+        <i class="fas fa-tags"></i>
+        KUP DOSTĘP
+      </button>
+    </div> <!-- movie card block end -->
 
-  </div>   <!-- end of row -->
+
+  </div> <!-- end of row -->
+  <span class="scroll-btn">
+    <a>
+      <span class="mouse">
+        <span>
+        </span>
+      </span>
+    </a>
+
+
+  </span>
 </div> <!-- end of page container -->
 
 
@@ -298,10 +310,60 @@
 
 
 
-      <hr />   <!-- spacing line between article and description -->
-      
+      <hr /> <!-- spacing line between article and description -->
 
+      <div class="actors">
+        <h2>Obsada</h2>
 
+        <table class="table table-borderless table-striped table-hover movie-actors">
+
+          <tbody>
+            <tr>
+              <th scope="row"><img src="/src/assets/tye.jpg" class="" alt=""></th>
+              <td><a href="">Tye Sheridan</a></td>
+              <td>Wade Owen Watts / Parzival</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="/src/assets/olivia.jpg" class="" alt=""></th>
+              <td><a href="">Olivia Cooke</a></td>
+              <td>Samantha Evelyn Cook / Art3mis</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="/src/assets/ben.jpg" class="" alt=""></th>
+              <td><a href="">Ben Mendelsohn</a></td>
+              <td>Nolan Sorrento</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="/src/assets/lena.jpg" class="" alt=""></th>
+              <td><a href="">Lena Waithe</a></td>
+              <td>Aech</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="/src/assets/miller.jpg" class="" alt=""></th>
+              <td><a href="">T.J. Miller</a></td>
+              <td>i-R0k</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="/src/assets/simon.jpg" class="" alt=""></th>
+              <td><a href="">Simon Pegg</a></td>
+              <td>Ogden Morrow</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="/src/assets/mark.jpg" class="" alt=""></th>
+              <td><a href="">Mark Rylance</a></td>
+              <td>Anorak / Halliday</td>
+            </tr>
+            <tr>
+              <th scope="row"><img src="/src/assets/philip.jpg" class="" alt=""></th>
+              <td><a href="">Philip Zhao</a></td>
+              <td>Sho</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div> <!-- movie decription info - end -->
+
+      <hr /> <!-- spacing line between article and description -->
 
       <!-- movie description article -->
       <div class="movie_description_article">
@@ -340,7 +402,6 @@
 
       </div> <!-- movie article end -->
     </div> <!-- movie description block end -->
-  
+
   </div> <!-- row end -->
 </div> <!-- container end -->
-
