@@ -92,7 +92,7 @@ table {
 
     .movie-photo {
       position: relative;
-
+      height: fit-content;
       button {
         position: absolute;
         border-radius: 20px;
@@ -154,6 +154,18 @@ table {
       padding: 5px 10px;
       background: #2b2e37;
       color: $shadowy;
+    }
+
+
+    .rating {
+      padding-top: 30px;
+      width:100%;
+      text-align: center;
+
+
+      i {
+        color: #eb305d;
+      }
     }
 
   }
