@@ -66,22 +66,38 @@ table {
     }
 
 
-    button {
-      position: absolute;
-      border-radius: 20px;
-      background: $pink-color;
-      border-color: $pink-color;
-      bottom: -15px;
-      left: 135px;
+    .movie-photo {
+      position: relative;
 
-      font-weight: 700;
-      letter-spacing: 2px;
-      font-size: 0.8em;
+      button {
+        position: absolute;
+        border-radius: 20px;
+        background: $pink-color;
+        border-color: $pink-color;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 220px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 0.8em;
+
+        &:hover {
+          background: #fff;
+          border-color: #fff;
+          color: $pink-color;
+          box-shadow: -4px -1px 29px -2px rgba(15, 14, 14, 0.72);
+        }
+      }
+
     }
+
   }
 
 
-//  movie info 
+  //  movie info 
   .movie-card_info {
     h2 {
       color: #fff;
@@ -132,6 +148,13 @@ table {
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 0.8em;
+
+    &:hover {
+      background: #fff;
+      border-color: #fff;
+      color: $pink-color;
+      box-shadow: -4px -1px 29px -2px rgba(15, 14, 14, 0.72);
+    }
   }
 
 }
@@ -182,7 +205,7 @@ table {
     padding-top: 50px;
 
 
-// inputs recenzja
+    // inputs recenzja
     input,
     textarea.form-control {
       background-color: $darky !important;
@@ -198,10 +221,10 @@ table {
 
     button {
       &:hover {
-        -webkit-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
-        -moz-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
-        box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
-        transition: .3s;
+        background: #fff;
+        border-color: #fff;
+        color: $pink-color;
+        box-shadow: -4px -1px 29px -2px rgba(15, 14, 14, 0.72);
       }
 
       transition: .3s;
@@ -361,8 +384,16 @@ table {
 
 }
 
+
+
+
+
+
+
+
+
 // media for mobile phones responsive design
-@media (max-width: 575.98px) {
+@media (max-width: 992px) {
 
 
   .movie-card_info {
@@ -393,8 +424,15 @@ table {
   .movie-card_block {
 
     button {
-      left: 110px;
-      border-top-right-radius: 20px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
 
     .movie-card_header {

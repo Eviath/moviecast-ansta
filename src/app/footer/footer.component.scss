@@ -13,6 +13,7 @@ a.navbar-brand {
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   color: $pink-color;
+  transition: 0.3s;
 
   span {
     color: #fff;
@@ -33,6 +34,15 @@ a.navbar-brand {
   }
 
 
+  &:hover {
+    transition: 0.3s;
+    color: #fff !important;
+
+    span {
+      color: $pink-color !important;
+    }
+  }
+
 }
 
 
@@ -47,11 +57,11 @@ a.navbar-brand {
 
 // footer styles
 .footer {
-
+  background-color: #0e1016;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  width: 100%;
   height: 80px;
   font-size: .9em;
   color: #fff;
@@ -60,6 +70,7 @@ a.navbar-brand {
     color: $pink-color;
   }
 }
+
 
 
 .footer-info-row {
@@ -74,10 +85,10 @@ a.navbar-brand {
     transition: .3s;
 
     &:hover {
-      -webkit-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
-      -moz-box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
-      box-shadow: -4px -1px 29px -2px rgba(235, 48, 93, 0.72);
-      transition: .3s;
+      background: #fff;
+      border-color: #fff;
+      color: $pink-color;
+      box-shadow: -4px -1px 29px -2px rgba(15, 14, 14, 0.72);
     }
 
     background: $pink-color;
@@ -174,7 +185,7 @@ a.navbar-brand {
 
 
 // media for mobile phones
-@media (max-width: 575.98px) {
+@media (max-width: 766px) {
 
   .footer-info-row {
     text-align: center;

@@ -185,25 +185,27 @@
       <div class="row">
 
 
-        <div class="movie-card_header col-md-6 justify-content-center">
+        <div class="movie-card_header col-lg-6 justify-content-center">
 
           <!-- movie photo -->
           <div class="resp-container movie-photo">
 
             <img src="./assets/playerone.jpg" alt="">
 
+<button (click)="isShow = !isShow" type="button" class="btn btn-secondary"> <i class="fas fa-play-circle"></i>
+  OBEJRZYJ ZWIASTUN</button>
+
           </div>
 
           <!-- watch trailer button -->
-          <button (click)="isShow = !isShow" type="button" class="btn btn-secondary"> <i class="fas fa-play-circle"></i>
-            OBEJRZYJ ZWIASTUN</button>
+
 
 
         </div> <!-- movie card header end -->
 
 
         <!-- movie card info -->
-        <div class="movie-card_info col-md-6">
+        <div class="movie-card_info col-lg-6">
 
           <h2>Ready Player One</h2>
           <h3>Animacja | Akcja | Science Fiction</h3>
@@ -256,13 +258,15 @@
         </div> <!-- movie card info end -->
 
         <!-- buy access to movie button - show buy card page -->
-        <button (click)="isBuy = !isBuy" type="button" class="btn btn-secondary"> 
-          <i class="fas fa-tags"></i> 
-          KUP DOSTĘP
-        </button>
+
 
       </div> <!-- end of row -->
+    <button (click)="isBuy = !isBuy" type="button" class="btn btn-secondary">
+      <i class="fas fa-tags"></i>
+      KUP DOSTĘP
+    </button>
     </div>  <!-- movie card block end -->
+
   </div>   <!-- end of row -->
 </div> <!-- end of page container -->
 

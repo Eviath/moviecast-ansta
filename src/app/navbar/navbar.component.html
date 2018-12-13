@@ -1,55 +1,60 @@
-
 <!-- navbar container -->
 <div class="container header-nav">
-  
 
-<!-- top navbar with logo and searchbar -->
-<nav class="navbar navbar-dark bg-dark ">
-  <a class="navbar-brand" href="/">Movie <span>Cast</span></a>
-  <div class="navbar-expand mr-auto">
-    <div class="navbar-nav">
-    
+
+  <!-- top navbar with logo and searchbar -->
+  <nav class="navbar navbar-dark bg-dark ">
+    <a class="navbar-brand navbar-brand--big" href="/">Movie <span>Cast</span></a>
+    <div class="navbar-expand mr-auto">
+      <div class="navbar-nav">
+
+      </div>
     </div>
-  </div>
-  <div class="navbar-expand ml-auto navbar-nav">
-    <div class="navbar-nav">
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Search">
-        
-        <h2> Witaj Gość! <a href="#"> Zaloguj się</a></h2>
-        
-      </form>
+    <div class="navbar-expand ml-auto navbar-nav">
+      <div class="navbar-nav">
+        <form class="form-inline my-2 my-lg-0">
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="Szukaj...">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+          </div>
+          <h2 class="nav-item"> Witaj Gość! <a href="#" class="log-in"> Zaloguj się</a>
+          </h2>
+
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
-<!-- end of top navbar -->
+  </nav>
+  <!-- end of top navbar -->
 
 
 
-<!-- main navbar with links -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+  <!-- main navbar with links -->
+  <div class="nav-wrap">
+    <nav class="navbar navbar-links navbar-expand-lg navbar-dark mb-5">
+      <a class="navbar-brand navbar-brand--links hidden" href="/">Movie <span>Cast</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+      </button>
+      <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-item nav-link active" routerLink="">Strona Główna</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item nav-link" href="#">Baza Filmów</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item nav-link" routerLink="contact">Aktualności</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item nav-link" href="#">Celebryci</a>
-            </li>
-            <button class="btn btn-secondary" href="#">Twoje Filmy</button>
+          <li class="nav-item">
+            <a class="nav-item nav-link" routerLink="">Strona Główna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link active" routerLink="">Baza Filmów</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" routerLink="">Aktualności</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" routerLink="">Celebryci</a>
+          </li>
+          <button class="btn btn-secondary" outerLink="">Twoje Filmy</button>
         </ul>
-    </div>
-</nav>
-<!-- end of main navbar -->
+      </div>
+    </nav>
+  </div>
+  <!-- end of main navbar -->
 
 
 </div> <!-- navbar container end -->
